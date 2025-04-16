@@ -1,7 +1,7 @@
-import { Fragment, useEffect, useState } from "react"
+import { Fragment, useEffect, useState } from "react";
+
 import "../Style/Cart.css";
 import NavBar from "../component/NavBar";
-
 function Cart() {
 
   const [cartData, setCartData] = useState({ total: 0, Products: [] });
@@ -18,7 +18,7 @@ function Cart() {
           return;
         }
 
-        const response = await fetch("https://devops-project.group18.site/v1/cart/cart", {
+        const response = await fetch("http://localhost:3003/cart", {
           headers: {
             "Content-Type": "application/json",
             "Authorization": "Bearer " + token,

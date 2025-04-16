@@ -9,9 +9,6 @@ import clip4 from "../assets/clip-04.jpg";
 import profile from "../assets/profile.jpg";
 import profileg from "../assets/profileGirl.jpg";
 import { useState, useEffect, Fragment } from "react";
-
-
-
 function Profile() {
 
 
@@ -20,7 +17,7 @@ function Profile() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      fetch("https://devops-project.group18.site/v1/user/users/", {
+      fetch("http://localhost:3001/users/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

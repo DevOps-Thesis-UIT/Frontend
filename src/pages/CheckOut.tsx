@@ -1,7 +1,5 @@
 import { Fragment } from "react";
 import "../Style/CheckOut.css";
-
-const cart_service = import.meta.env.CART_URL;
 function CheckOut() {
 
   
@@ -13,7 +11,7 @@ function submitHandler(){
   const token = localStorage.getItem("token");
 
   if (token) { 
-    fetch("https://devops-project.group18.site/v1/cart/cart/checkout", {
+    fetch("http://localhost:3003/cart/checkout", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

@@ -1,7 +1,6 @@
 import { Fragment, useState } from "react";
 import "../Style/Login.css";
 import Alert from "../component/Alert";
-
 function Login() {
 
 
@@ -11,7 +10,7 @@ function Login() {
     event.preventDefault();
     
     try {
-      const response = await fetch("https://devops-project.group18.site/v1/user/users/login", {
+      const response = await fetch("http://localhost:3001/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

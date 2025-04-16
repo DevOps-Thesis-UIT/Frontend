@@ -15,7 +15,7 @@ function Home() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("https://devops-project.group18.site/v1/product/products", {
+      const response = await fetch("http://localhost:3002/products", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -43,7 +43,7 @@ function Home() {
     if (selectedCategory === "idle") {
       fetchData();
     } else {
-      fetch(`https://devops-project.group18.site/v1/product/filter/category/${selectedCategory}`, {
+      fetch(`http://localhost:3002/filter/category/${selectedCategory}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

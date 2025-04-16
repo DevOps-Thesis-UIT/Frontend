@@ -16,7 +16,7 @@ function NavBar() {
               <nav className="main-nav">
                 <a href="/" className="logo">
                   <h4>
-                    <em>Gaming</em> Store
+                    <em>Gaming</em> Strore
                   </h4>
                 </a>
                 <div className="search-input">
