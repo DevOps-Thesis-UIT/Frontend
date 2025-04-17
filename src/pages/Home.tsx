@@ -15,7 +15,7 @@ function Home() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://192.168.49.2:30219/products", {
+      const response = await fetch("a833b046604d845b58a9e85dd542ac9a-537800968.us-east-1.elb.amazonaws.com/products", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -43,7 +43,7 @@ function Home() {
     if (selectedCategory === "idle") {
       fetchData();
     } else {
-      fetch(`http://192.168.49.2:30219/filter/category/${selectedCategory}`, {
+      fetch(`a833b046604d845b58a9e85dd542ac9a-537800968.us-east-1.elb.amazonaws.com/filter/category/${selectedCategory}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
