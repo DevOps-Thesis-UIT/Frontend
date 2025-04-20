@@ -11,7 +11,7 @@ function submitHandler(){
   const token = localStorage.getItem("token");
 
   if (token) { 
-    fetch("http://cart-service.microservices.svc.cluster.local:3003/cart/checkout", {
+    fetch("http://game-store.com/cart/cart/checkout", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

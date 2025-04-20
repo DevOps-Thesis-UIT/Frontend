@@ -17,7 +17,7 @@ function Profile() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      fetch("http://user-service.microservices.svc.cluster.local:3001/users/", {
+      fetch("http://game-store.com/user/users/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

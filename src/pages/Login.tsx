@@ -10,7 +10,7 @@ function Login() {
     event.preventDefault();
     
     try {
-      const response = await fetch("http://user-service.microservices.svc.cluster.local:3001/users/login", {
+      const response = await fetch("http://game-store.com/user/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

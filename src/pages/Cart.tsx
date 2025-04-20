@@ -18,7 +18,7 @@ function Cart() {
           return;
         }
 
-        const response = await fetch("http://cart-service.microservices.svc.cluster.local:3003/cart", {
+        const response = await fetch("http://game-store.com/cart/cart", {
           headers: {
             "Content-Type": "application/json",
             "Authorization": "Bearer " + token,
