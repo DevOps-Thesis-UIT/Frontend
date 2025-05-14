@@ -45,12 +45,3 @@ jobs:
       run: |
         docker build -t $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:$IMAGE_TAG .
         docker push $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:$IMAGE_TAG
-    
-    # - name: Build the Docker image
-    #   run: docker build --file Dockerfile --tag trituong/frontend-service:v${{ github.run_number }} .
-
-    # - name: Login to Docker Hub
-    #   run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-
-    # - name: Publish Image to Docker Hub
-    #   run: docker push trituong/frontend-service:v${{ github.run_number }}
