@@ -15,7 +15,7 @@ function Home() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://game-store.com/product/products", {
+      const response = await fetch("https://game-store.trituong.space/product/products", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -43,7 +43,7 @@ function Home() {
     if (selectedCategory === "idle") {
       fetchData();
     } else {
-      fetch(`http://game-store.com/product/filter/category/${selectedCategory}`, {
+      fetch(`https://game-store.trituong.space/product/filter/category/${selectedCategory}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

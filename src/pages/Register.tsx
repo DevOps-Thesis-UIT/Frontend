@@ -14,7 +14,7 @@ function Register() {
     event.preventDefault();
 
     try {
-      const response = await fetch("http://game-store.com/user/users", {
+      const response = await fetch("https://game-store.trituong.space/user/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -52,7 +52,7 @@ function Register() {
     <div className="bg-img">
       <div className="registerContent">
         <header>Register Form</header>
-        <form action="http://game-store.com/user/users" method="post" onSubmit={handleSubmit}>
+        <form action="https://game-store.trituong.space/user/users" method="post" onSubmit={handleSubmit}>
           <div className="row">
             <div className="col">
               <h6>First name</h6>

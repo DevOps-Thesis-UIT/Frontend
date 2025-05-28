@@ -11,7 +11,7 @@ function submitHandler(){
   const token = localStorage.getItem("token");
 
   if (token) { 
-    fetch("http://game-store.com/cart/cart/checkout", {
+    fetch("https://game-store.trituong.space/cart/cart/checkout", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

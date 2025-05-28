@@ -17,7 +17,7 @@ function Profile() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      fetch("http://game-store.com/user/users/", {
+      fetch("https://game-store.trituong.space/user/users/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

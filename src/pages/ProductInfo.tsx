@@ -9,7 +9,7 @@ function ProductInfo() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://game-store.com/product/products/${productID}`, {
+        const response = await fetch(`https://game-store.trituong.space/product/products/${productID}`, {
           headers: {
             "Content-Type": "application/json",
           },
@@ -29,7 +29,7 @@ function ProductInfo() {
     const token = localStorage.getItem("token");
     if (token) {
       console.log("Add to cart");
-      fetch(`http://game-store.com/cart/cart/${productID}`, {
+      fetch(`https://game-store.trituong.space/cart/cart/${productID}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

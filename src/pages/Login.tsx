@@ -10,7 +10,7 @@ function Login() {
     event.preventDefault();
     
     try {
-      const response = await fetch("http://game-store.com/user/users/login", {
+      const response = await fetch("https://game-store.trituong.space/user/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

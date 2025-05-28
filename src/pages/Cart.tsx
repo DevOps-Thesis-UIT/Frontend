@@ -18,7 +18,7 @@ function Cart() {
           return;
         }
 
-        const response = await fetch("http://game-store.com/cart/cart", {
+        const response = await fetch("https://game-store.trituong.space/cart/cart", {
           headers: {
             "Content-Type": "application/json",
             "Authorization": "Bearer " + token,
